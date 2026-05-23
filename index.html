@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>Taxi Boat Monaco – Grand Prix 2026 | Maritime Shuttle Service</title>
+  <meta name="description" content="Premium maritime shuttle service during the Monaco Grand Prix 2026. Shaded vessel approved by Monaco's ports, with direct drop-off at the circuit. Available June 4–7, 2026.">
+  <meta name="keywords" content="taxi boat monaco, navette maritime monaco, grand prix monaco 2026, boat shuttle monaco, monaco f1 2026, taxi bateau monaco">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://taxiboat-monaco.com">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://taxiboat-monaco.com">
+  <meta property="og:title" content="Taxi Boat Monaco – Grand Prix 2026">
+  <meta property="og:description" content="Premium maritime shuttle service during the Monaco Grand Prix 2026. June 4–7, 2026.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="fr_FR">
+
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="en" href="https://taxiboat-monaco.com">
+  <link rel="alternate" hreflang="fr" href="https://taxiboat-monaco.com?lang=fr">
+  <link rel="alternate" hreflang="x-default" href="https://taxiboat-monaco.com">
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Taxi Boat Monaco",
+    "description": "Premium maritime shuttle service during the Monaco Grand Prix 2026",
+    "url": "https://taxiboat-monaco.com",
+    "telephone": "+33640610807",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Monaco",
+      "addressCountry": "MC"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 43.7384,
+      "longitude": 7.4246
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "validFrom": "2026-06-04",
+      "validThrough": "2026-06-07"
+    },
+    "event": {
+      "@type": "Event",
+      "name": "Monaco Grand Prix 2026",
+      "startDate": "2026-06-04",
+      "endDate": "2026-06-07",
+      "location": {
+        "@type": "Place",
+        "name": "Circuit de Monaco",
+        "address": "Monaco"
+      }
+    }
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* ── Variables ── */
+    :root {
+      --blush:      #F2DDD9;
+      --blush-mid:  #E8CECA;
+      --rose:       #B8705A;
+      --rose-light: #CFA08A;
+      --teal:       #6BBFB8;
+      --teal-dark:  #4A9E97;
+      --cream:      #FAF6F4;
+      --white:      #FFFFFF;
+      --ink:        #17100E;
+      --mid:        #5C524E;
+      --muted:      #9E8E8A;
+      --line:       rgba(184,112,90,.18);
+      --navy:       #0E1E33;
+    }
+
+    /* ── Reset ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      font-weight: 300;
+      color: var(--ink);
+      background: var(--white);
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    img { display: block; width: 100%; height: 100%; object-fit: cover; }
+    a { text-decoration: none; color: inherit; }
+    button { border: none; background: none; cursor: pointer; font: inherit; }
+
+    /* ── Nav ── */
+    #nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 22px 48px;
+      transition: padding .4s, background .4s, border-color .4s;
+    }
+    #nav.solid {
+      padding: 14px 48px;
+      background: rgba(250,246,244,.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1rem; font-weight: 500;
+      letter-spacing: .18em; text-transform: uppercase;
+      color: #fff;
+      transition: color .4s;
+    }
+    #nav.solid .nav-logo { color: var(--ink); }
+
+    .nav-right { display: flex; align-items: center; gap: 20px; }
+
+    .lang-wrap { display: flex; gap: 3px; }
+    .lang-btn {
+      font-family: 'Inter', sans-serif;
+      font-size: .6rem; font-weight: 500;
+      letter-spacing: .14em; text-transform: uppercase;
+      padding: 5px 9px;
+      border: 1px solid rgba(255,255,255,.35);
+      border-radius: 2px;
+      color: rgba(255,255,255,.55);
+      transition: all .3s;
+    }
+    .lang-btn.on { color: #fff; border-color: #fff; }
+    #nav.solid .lang-btn { color: var(--muted); border-color: var(--line); }
+    #nav.solid .lang-btn.on { color: var(--rose); border-color: var(--rose); }
+
+    .nav-book {
+      display: inline-block;
+      font-size: .62rem; font-weight: 500;
+      letter-spacing: .18em; text-transform: uppercase;
+      padding: 9px 20px;
+      border: 1px solid rgba(255,255,255,.55);
+      border-radius: 2px;
+      color: #fff;
+      transition: all .3s;
+    }
+    .nav-book:hover { background: rgba(255,255,255,.12); }
+    #nav.solid .nav-book { color: var(--rose); border-color: var(--rose); }
+    #nav.solid .nav-book:hover { background: var(--rose); color: #fff; }
+
+    /* ── Hero ── */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      overflow: hidden;
+    }
+
+    /* Left panel — dark content area */
+    .hero-left {
+      position: relative;
+      display: flex; flex-direction: column;
+      justify-content: center;
+      padding: 120px 64px 80px;
+      background: linear-gradient(150deg, #1b3a5e 0%, #0d2139 55%, #07151f 100%);
+      overflow: hidden;
+    }
+    .hero-left::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=60') center/cover no-repeat;
+      opacity: .12;
+      mix-blend-mode: luminosity;
+      pointer-events: none;
+    }
+    .hero-left-inner { position: relative; z-index: 1; }
+
+    /* Right panel — poster image */
+    .hero-right {
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-right img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: center top;
+    }
+    /* thin separator line */
+    .hero-right::before {
+      content: '';
+      position: absolute; top: 0; left: 0; bottom: 0;
+      width: 1px;
+      background: linear-gradient(to bottom, transparent, rgba(184,112,90,.4) 30%, rgba(184,112,90,.4) 70%, transparent);
+      z-index: 2;
+    }
+
+    .eyebrow {
+      font-size: .6rem; font-weight: 500;
+      letter-spacing: .38em; text-transform: uppercase;
+      color: var(--rose-light);
+      margin-bottom: 30px;
+    }
+    .hero-h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3.6rem, 7vw, 7.5rem);
+      font-weight: 300;
+      line-height: .88;
+      color: #fff;
+      letter-spacing: -.01em;
+    }
+    .hero-h1 em { font-style: italic; color: var(--rose-light); }
+    .hero-sub {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(.95rem, 2vw, 1.35rem);
+      font-weight: 300; font-style: italic;
+      color: rgba(255,255,255,.72);
+      margin: 22px 0 14px;
+      letter-spacing: .03em;
+    }
+    .hero-desc {
+      font-size: .82rem; font-weight: 300;
+      color: rgba(255,255,255,.52);
+      line-height: 1.78;
+      max-width: 440px;
+      margin-bottom: 44px;
+    }
+    .hero-ctas {
+      display: flex; gap: 10px; flex-wrap: wrap;
+    }
+
+    /* ── Buttons ── */
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: .65rem; font-weight: 500;
+      letter-spacing: .2em; text-transform: uppercase;
+      padding: 13px 26px; border-radius: 2px;
+      transition: all .28s;
+      white-space: nowrap;
+    }
+    .btn svg { width: 13px; height: 13px; fill: currentColor; flex-shrink: 0; }
+
+    .btn-rose  { background: var(--rose); color: #fff; border: 1px solid var(--rose); }
+    .btn-rose:hover { background: var(--rose-light); border-color: var(--rose-light); }
+
+    .btn-outline-w { color: #fff; border: 1px solid rgba(255,255,255,.45); }
+    .btn-outline-w:hover { background: rgba(255,255,255,.1); border-color: #fff; }
+
+    .btn-ghost-w { color: rgba(255,255,255,.6); border: 1px solid rgba(255,255,255,.2); }
+    .btn-ghost-w:hover { color: #fff; border-color: rgba(255,255,255,.45); }
+
+    .btn-ink  { background: var(--ink); color: #fff; border: 1px solid var(--ink); }
+    .btn-ink:hover { background: #2e2420; border-color: #2e2420; }
+
+    .btn-teal { background: var(--teal); color: #fff; border: 1px solid var(--teal); }
+    .btn-teal:hover { background: var(--teal-dark); border-color: var(--teal-dark); }
+
+    .btn-call { background: var(--rose); color: #fff; border: 1px solid var(--rose); width: 100%; justify-content: center; }
+    .btn-call:hover { background: var(--rose-light); border-color: var(--rose-light); }
+
+    .btn-wa { color: var(--teal-dark); border: 1px solid var(--teal); width: 100%; justify-content: center; }
+    .btn-wa:hover { background: var(--teal); color: #fff; }
+
+    /* ── Scroll hint ── */
+    .scroll-hint {
+      position: absolute; bottom: 30px; left: 64px;
+      z-index: 2;
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+      color: rgba(255,255,255,.32);
+      font-size: .55rem; letter-spacing: .25em; text-transform: uppercase;
+    }
+    .scroll-line {
+      width: 1px; height: 38px;
+      background: linear-gradient(to bottom, rgba(255,255,255,.35), transparent);
+      animation: pulse-line 2s ease-in-out infinite;
+    }
+    @keyframes pulse-line {
+      0%,100% { opacity: .35; transform: scaleY(1); }
+      50%      { opacity: .9;  transform: scaleY(.65); }
+    }
+
+    /* ── Stats strip ── */
+    .strip {
+      background: var(--navy);
+      padding: 34px 48px;
+      display: flex; align-items: center; justify-content: center;
+      gap: 56px; flex-wrap: wrap;
+    }
+    .stat { text-align: center; }
+    .stat-n {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 2.6rem; font-weight: 300;
+      color: var(--rose-light); line-height: 1;
+    }
+    .stat-l {
+      font-size: .55rem; font-weight: 500;
+      letter-spacing: .26em; text-transform: uppercase;
+      color: rgba(255,255,255,.38);
+      margin-top: 7px;
+    }
+    .strip-sep { width: 1px; height: 36px; background: rgba(255,255,255,.1); }
+
+    /* ── Section commons ── */
+    .section { padding: 104px 48px; }
+
+    .label {
+      font-size: .58rem; font-weight: 500;
+      letter-spacing: .38em; text-transform: uppercase;
+      color: var(--rose);
+      display: flex; align-items: center; gap: 14px;
+      margin-bottom: 22px;
+    }
+    .label::after {
+      content: ''; flex: 0 0 36px; height: 1px;
+      background: var(--rose); opacity: .45;
+    }
+
+    .sh {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2.4rem, 5.5vw, 4.4rem);
+      font-weight: 300; line-height: 1.04;
+      color: var(--ink); margin-bottom: 28px;
+    }
+    .sh em { font-style: italic; color: var(--rose); }
+
+    /* ── Services ── */
+    .services { background: var(--cream); }
+    .svc-wrap {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: 1fr 1.05fr;
+      gap: 80px; align-items: start;
+    }
+    .svc-body p {
+      font-size: .9rem; line-height: 1.82;
+      color: var(--mid); margin-bottom: 28px;
+    }
+    .svc-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 1px; background: var(--line);
+    }
+    .svc-item {
+      background: var(--cream);
+      padding: 30px 26px;
+      transition: background .3s;
+    }
+    .svc-item:hover { background: #fff; }
+    .svc-ico { font-size: 1.3rem; margin-bottom: 13px; }
+    .svc-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem; font-weight: 500;
+      color: var(--ink); margin-bottom: 5px;
+    }
+    .svc-txt {
+      font-size: .75rem; color: var(--muted);
+      line-height: 1.6; font-weight: 300;
+    }
+
+    /* ── Team ── */
+    .team { background: #fff; }
+    .team-wrap { max-width: 1100px; margin: 0 auto; }
+    .team-head {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 80px; align-items: end;
+      margin-bottom: 64px;
+    }
+    .team-desc {
+      font-size: .9rem; line-height: 1.82;
+      color: var(--mid); font-weight: 300;
+    }
+    .team-grid {
+      display: grid; grid-template-columns: repeat(3,1fr);
+      gap: 20px;
+    }
+    .card {
+      border: 1px solid var(--line);
+      padding: 40px 28px 32px;
+      transition: border-color .3s, box-shadow .3s;
+    }
+    .card:hover {
+      border-color: var(--rose-light);
+      box-shadow: 0 10px 40px rgba(184,112,90,.09);
+    }
+    .card-initial {
+      width: 50px; height: 50px; border-radius: 50%;
+      background: var(--blush);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem; font-weight: 500;
+      color: var(--rose);
+      margin-bottom: 20px;
+    }
+    .card-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem; font-weight: 400;
+      color: var(--ink); margin-bottom: 4px;
+    }
+    .card-role {
+      font-size: .6rem; font-weight: 500;
+      letter-spacing: .22em; text-transform: uppercase;
+      color: var(--muted); margin-bottom: 24px;
+    }
+    .card-phone {
+      font-size: .9rem; font-weight: 300;
+      color: var(--mid); margin-bottom: 22px;
+    }
+    .card-btns { display: flex; flex-direction: column; gap: 8px; }
+
+    /* ── Gallery ── */
+    .gallery { background: var(--cream); padding-bottom: 0; }
+    .gallery-head { max-width: 1100px; margin: 0 auto 48px; }
+    .gal-grid {
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: 270px 270px;
+      gap: 4px;
+    }
+    .gal-item { overflow: hidden; }
+    .gal-item:first-child { grid-column: span 2; grid-row: span 2; }
+    .gal-item img { transition: transform .7s ease; }
+    .gal-item:hover img { transform: scale(1.06); }
+
+    /* ── Contact ── */
+    .contact { background: var(--blush); }
+    .contact-inner {
+      max-width: 680px; margin: 0 auto;
+      text-align: center;
+    }
+    .contact-label {
+      font-size: .58rem; font-weight: 500;
+      letter-spacing: .38em; text-transform: uppercase;
+      color: var(--rose); margin-bottom: 22px;
+      display: flex; align-items: center; justify-content: center; gap: 14px;
+    }
+    .contact-label::before,
+    .contact-label::after {
+      content: ''; flex: 0 0 30px; height: 1px;
+      background: var(--rose); opacity: .45;
+    }
+    .contact-tagline {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.7rem, 3.6vw, 2.8rem);
+      font-weight: 300; font-style: italic;
+      color: var(--ink); line-height: 1.2;
+      margin-bottom: 18px;
+    }
+    .contact-desc {
+      font-size: .84rem; font-weight: 300;
+      color: var(--mid); line-height: 1.78;
+      margin-bottom: 40px;
+    }
+    .contact-ctas {
+      display: flex; gap: 10px;
+      justify-content: center; flex-wrap: wrap;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--ink);
+      padding: 44px 48px;
+    }
+    .footer-inner {
+      max-width: 1100px; margin: 0 auto;
+      display: flex; align-items: center;
+      justify-content: space-between;
+      gap: 20px; flex-wrap: wrap;
+    }
+    .footer-brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem; font-weight: 400;
+      letter-spacing: .12em; color: #fff;
+    }
+    .footer-info {
+      font-size: .7rem; color: rgba(255,255,255,.32);
+      text-align: center; line-height: 1.7;
+    }
+    .footer-copy {
+      font-size: .62rem; color: rgba(255,255,255,.2);
+      letter-spacing: .06em;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 900px) {
+      .svc-wrap { grid-template-columns: 1fr; gap: 44px; }
+      .team-head { grid-template-columns: 1fr; gap: 20px; }
+      .team-grid { grid-template-columns: 1fr; gap: 14px; }
+      .gal-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 200px 200px;
+      }
+      .gal-item:first-child { grid-column: span 2; grid-row: span 1; }
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        min-height: auto;
+      }
+      .hero-left {
+        padding: 100px 28px 56px;
+        order: 2;
+      }
+      .hero-right {
+        order: 1;
+        height: 55vw; min-height: 260px; max-height: 420px;
+      }
+      .hero-right::before { display: none; }
+      .hero-right img { object-position: center center; }
+      .scroll-hint { display: none; }
+    }
+
+    @media (max-width: 768px) {
+      #nav { padding: 16px 20px; }
+      #nav.solid { padding: 12px 20px; }
+      .nav-book { display: none; }
+      .section { padding: 72px 20px; }
+      .strip { gap: 28px; padding: 26px 20px; }
+      .footer-inner { flex-direction: column; text-align: center; gap: 12px; }
+      .svc-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 480px) {
+      .strip-sep { display: none; }
+      .strip { gap: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ── Navigation ── -->
+  <nav id="nav">
+    <span class="nav-logo" data-en="Taxi Boat Monaco" data-fr="Taxi Boat Monaco">Taxi Boat Monaco</span>
+    <div class="nav-right">
+      <div class="lang-wrap">
+        <button class="lang-btn on" onclick="setLang('en')">EN</button>
+        <button class="lang-btn"    onclick="setLang('fr')">FR</button>
+      </div>
+      <a href="tel:+33640610807" class="nav-book"
+         data-en="Book Now" data-fr="Réserver">Book Now</a>
+    </div>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section class="hero" id="home" aria-label="Hero">
+
+    <!-- Left: text content -->
+    <div class="hero-left">
+      <div class="hero-left-inner">
+        <p class="eyebrow" data-en="Monaco · June 4–7, 2026" data-fr="Monaco · 4–7 Juin 2026">Monaco · June 4–7, 2026</p>
+
+        <h1 class="hero-h1">
+          <em data-en="Taxi" data-fr="Taxi">Taxi</em><br>
+          <span data-en="Boat" data-fr="Boat">Boat</span>
+        </h1>
+
+        <p class="hero-sub" data-en="Grand Prix de Monaco 2026" data-fr="Grand Prix de Monaco 2026">Grand Prix de Monaco 2026</p>
+
+        <p class="hero-desc"
+           data-en="Premium maritime shuttle service during the Monaco Grand Prix. Shaded vessel approved by Monaco's port authorities, with direct drop-off at the circuit."
+           data-fr="Service de taxi boat pendant le Grand Prix de Monaco. Navette ombragée agréée par les ports Monégasques, avec dépose directement sur le circuit.">
+          Premium maritime shuttle service during the Monaco Grand Prix. Shaded vessel approved by Monaco's port authorities, with direct drop-off at the circuit.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="tel:+33640610807" class="btn btn-rose">
+            <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.58.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.18 21 3 13.82 3 5c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.01L6.6 10.8z"/></svg>
+            <span data-en="Call Now" data-fr="Appeler">Call Now</span>
+          </a>
+          <a href="https://wa.me/33640610807" class="btn btn-outline-w" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+          <a href="#team" class="btn btn-ghost-w">
+            <span data-en="Meet the Team" data-fr="Notre Équipe">Meet the Team</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="scroll-hint" aria-hidden="true">
+        <div class="scroll-line"></div>
+        <span data-en="Scroll" data-fr="Défiler">Scroll</span>
+      </div>
+    </div>
+
+    <!-- Right: brand poster -->
+    <div class="hero-right">
+      <img
+        src="poster.jpg"
+        alt="Taxi Boat Monaco — brand visual"
+        fetchpriority="high"
+        loading="eager"
+      >
+    </div>
+
+  </section>
+
+  <!-- ── Stats strip ── -->
+  <div class="strip" aria-label="Event highlights">
+    <div class="stat">
+      <div class="stat-n">4–7</div>
+      <div class="stat-l" data-en="June 2026" data-fr="Juin 2026">June 2026</div>
+    </div>
+    <div class="strip-sep" aria-hidden="true"></div>
+    <div class="stat">
+      <div class="stat-n">4</div>
+      <div class="stat-l" data-en="Days of Service" data-fr="Jours de Service">Days of Service</div>
+    </div>
+    <div class="strip-sep" aria-hidden="true"></div>
+    <div class="stat">
+      <div class="stat-n">3</div>
+      <div class="stat-l" data-en="Expert Guides" data-fr="Guides Expertes">Expert Guides</div>
+    </div>
+    <div class="strip-sep" aria-hidden="true"></div>
+    <div class="stat">
+      <div class="stat-n">∞</div>
+      <div class="stat-l" data-en="Memories Made" data-fr="Souvenirs Créés">Memories Made</div>
+    </div>
+  </div>
+
+  <!-- ── Services ── -->
+  <section class="section services" id="services">
+    <div class="svc-wrap">
+      <div>
+        <p class="label" data-en="Our Services" data-fr="Nos Services">Our Services</p>
+        <h2 class="sh">
+          <span data-en="Maritime" data-fr="Navettes">Maritime</span><br>
+          <em data-en="Excellence" data-fr="Maritimes">Excellence</em>
+        </h2>
+        <p data-en="Navigate the Grand Prix weekend in complete style. Our maritime shuttle connects Monaco's ports and provides exclusive access to the circuit — from the shade of our approved vessel."
+           data-fr="Profitez du week-end du Grand Prix avec style. Notre navette maritime relie les ports Monégasques et offre un accès exclusif au circuit — à l'ombre de notre embarcation agréée.">
+          Navigate the Grand Prix weekend in complete style. Our maritime shuttle connects Monaco's ports and provides exclusive access to the circuit — from the shade of our approved vessel.
+        </p>
+        <p data-en="Fully licensed by Monaco's port authorities, we deliver safe, attentive, and responsive service throughout the four-day event."
+           data-fr="Entièrement agréé par les ports Monégasques, nous assurons un service sûr, attentionné et réactif durant les quatre jours de l'événement.">
+          Fully licensed by Monaco's port authorities, we deliver safe, attentive, and responsive service throughout the four-day event.
+        </p>
+      </div>
+
+      <div class="svc-grid">
+        <div class="svc-item">
+          <div class="svc-ico">⛵</div>
+          <div class="svc-name" data-en="Shaded Shuttle" data-fr="Navette Ombragée">Shaded Shuttle</div>
+          <div class="svc-txt"  data-en="Comfortable, covered maritime vessel" data-fr="Navette maritime couverte et confortable">Comfortable, covered maritime vessel</div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-ico">🏁</div>
+          <div class="svc-name" data-en="Circuit Access" data-fr="Accès Circuit">Circuit Access</div>
+          <div class="svc-txt"  data-en="Direct drop-off at the track (bracelet required)" data-fr="Dépose au circuit (bracelet requis)">Direct drop-off at the track (bracelet required)</div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-ico">⚓</div>
+          <div class="svc-name" data-en="Inter-port Routes" data-fr="Liaisons Inter-ports">Inter-port Routes</div>
+          <div class="svc-txt"  data-en="Between all Monegasque harbours" data-fr="Entre tous les ports Monégasques">Between all Monegasque harbours</div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-ico">✦</div>
+          <div class="svc-name" data-en="Premium Care" data-fr="Service Premium">Premium Care</div>
+          <div class="svc-txt"  data-en="Personalised assistance throughout" data-fr="Accompagnement personnalisé">Personalised assistance throughout</div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-ico">📅</div>
+          <div class="svc-name" data-en="4-Day Availability" data-fr="Disponibilité 4 Jours">4-Day Availability</div>
+          <div class="svc-txt"  data-en="June 4–7, 2026 — full Grand Prix weekend" data-fr="4–7 Juin 2026 — tout le week-end">June 4–7, 2026 — full Grand Prix weekend</div>
+        </div>
+        <div class="svc-item">
+          <div class="svc-ico">⚡</div>
+          <div class="svc-name" data-en="On Demand" data-fr="À la Demande">On Demand</div>
+          <div class="svc-txt"  data-en="Reactive service across the entire event" data-fr="Service réactif tout le week-end">Reactive service across the entire event</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Team ── -->
+  <section class="section team" id="team">
+    <div class="team-wrap">
+      <div class="team-head">
+        <div>
+          <p class="label" data-en="Your Guides" data-fr="Votre Équipe">Your Guides</p>
+          <h2 class="sh">
+            <span data-en="Meet the" data-fr="Rencontrez">Meet the</span><br>
+            <em data-en="Team" data-fr="l'Équipe">Team</em>
+          </h2>
+        </div>
+        <p class="team-desc"
+           data-en="Marjorie, Amélie and Bénédicte will accompany you on every maritime journey so you can enjoy this extraordinary event in the finest possible conditions throughout the Grand Prix."
+           data-fr="Marjorie, Amélie et Bénédicte vous accompagneront dans vos déplacements maritimes afin de profiter de cet événement dans les meilleures conditions pendant toute la durée du Grand Prix.">
+          Marjorie, Amélie and Bénédicte will accompany you on every maritime journey so you can enjoy this extraordinary event in the finest possible conditions throughout the Grand Prix.
+        </p>
+      </div>
+
+      <div class="team-grid">
+
+        <!-- Marjorie -->
+        <div class="card">
+          <div class="card-initial">M</div>
+          <div class="card-name">Marjorie</div>
+          <div class="card-role" data-en="Maritime Guide" data-fr="Guide Maritime">Maritime Guide</div>
+          <div class="card-phone">06 40 61 08 07</div>
+          <div class="card-btns">
+            <a href="tel:+33640610807" class="btn btn-call">
+              <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.58.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.18 21 3 13.82 3 5c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.01L6.6 10.8z"/></svg>
+              <span data-en="Call Marjorie" data-fr="Appeler Marjorie">Call Marjorie</span>
+            </a>
+            <a href="https://wa.me/33640610807" class="btn btn-wa" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Amélie -->
+        <div class="card">
+          <div class="card-initial">A</div>
+          <div class="card-name">Amélie</div>
+          <div class="card-role" data-en="Maritime Guide" data-fr="Guide Maritime">Maritime Guide</div>
+          <div class="card-phone">06 09 88 90 12</div>
+          <div class="card-btns">
+            <a href="tel:+33609889012" class="btn btn-call">
+              <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.58.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.18 21 3 13.82 3 5c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.01L6.6 10.8z"/></svg>
+              <span data-en="Call Amélie" data-fr="Appeler Amélie">Call Amélie</span>
+            </a>
+            <a href="https://wa.me/33609889012" class="btn btn-wa" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Bénédicte -->
+        <div class="card">
+          <div class="card-initial">B</div>
+          <div class="card-name">Bénédicte</div>
+          <div class="card-role" data-en="Maritime Guide" data-fr="Guide Maritime">Maritime Guide</div>
+          <div class="card-phone">06 49 81 74 18</div>
+          <div class="card-btns">
+            <a href="tel:+33649817418" class="btn btn-call">
+              <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.58.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.18 21 3 13.82 3 5c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.01L6.6 10.8z"/></svg>
+              <span data-en="Call Bénédicte" data-fr="Appeler Bénédicte">Call Bénédicte</span>
+            </a>
+            <a href="https://wa.me/33649817418" class="btn btn-wa" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Gallery ── -->
+  <section class="section gallery" id="gallery">
+    <div class="gallery-head">
+      <p class="label" data-en="Monaco & The Sea" data-fr="Monaco & La Mer">Monaco & The Sea</p>
+      <h2 class="sh"><em data-en="The Experience" data-fr="L'Expérience">The Experience</em></h2>
+    </div>
+    <div class="gal-grid">
+      <div class="gal-item">
+        <img
+          src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1200&q=80"
+          alt="Monaco harbour aerial" loading="lazy">
+      </div>
+      <div class="gal-item">
+        <img
+          src="https://images.unsplash.com/photo-1567899378494-47b22a2ae96a?auto=format&fit=crop&w=700&q=80"
+          alt="Luxury yacht on the Mediterranean" loading="lazy">
+      </div>
+      <div class="gal-item">
+        <img
+          src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?auto=format&fit=crop&w=700&q=80"
+          alt="Monaco coastline" loading="lazy">
+      </div>
+      <div class="gal-item">
+        <img
+          src="https://images.unsplash.com/photo-1551244072-5d12893278bc?auto=format&fit=crop&w=700&q=80"
+          alt="Mediterranean blue sea" loading="lazy">
+      </div>
+      <div class="gal-item">
+        <img
+          src="https://images.unsplash.com/photo-1513569771920-c9e1d31714af?auto=format&fit=crop&w=700&q=80"
+          alt="Monaco Grand Prix atmosphere" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contact ── -->
+  <section class="section contact" id="contact">
+    <div class="contact-inner">
+      <p class="contact-label" data-en="Get In Touch" data-fr="Contactez-Nous">Get In Touch</p>
+      <h2 class="contact-tagline"
+          data-en="Ready to experience Monaco from the sea?"
+          data-fr="Prêt à vivre Monaco depuis la mer ?">
+        Ready to experience Monaco from the sea?
+      </h2>
+      <p class="contact-desc"
+         data-en="Contact us directly to arrange your maritime transfers during the Grand Prix weekend. Our team is available and ready to assist you from June 4 to 7, 2026."
+         data-fr="Contactez-nous directement pour organiser vos transferts maritimes pendant le week-end du Grand Prix. Notre équipe est disponible et prête à vous aider du 4 au 7 juin 2026.">
+        Contact us directly to arrange your maritime transfers during the Grand Prix weekend. Our team is available and ready to assist you from June 4 to 7, 2026.
+      </p>
+      <div class="contact-ctas">
+        <a href="tel:+33640610807" class="btn btn-ink">
+          <svg viewBox="0 0 24 24"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.58.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.18 21 3 13.82 3 5c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.24 1.01L6.6 10.8z"/></svg>
+          <span data-en="Call Now" data-fr="Appeler">Call Now</span>
+        </a>
+        <a href="https://wa.me/33640610807" class="btn btn-teal" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">Taxi Boat Monaco</div>
+      <div class="footer-info">
+        <span data-en="Grand Prix de Monaco 2026 · June 4–7" data-fr="Grand Prix de Monaco 2026 · 4–7 Juin">Grand Prix de Monaco 2026 · June 4–7</span><br>
+        <span data-en="Principality of Monaco" data-fr="Principauté de Monaco">Principality of Monaco</span>
+      </div>
+      <div class="footer-copy"
+           data-en="© 2026 Taxi Boat Monaco · All rights reserved"
+           data-fr="© 2026 Taxi Boat Monaco · Tous droits réservés">
+        © 2026 Taxi Boat Monaco · All rights reserved
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // ── Language toggle ──
+    let lang = (new URLSearchParams(location.search).get('lang') === 'fr') ? 'fr' : 'en';
+
+    function setLang(l) {
+      lang = l;
+      document.documentElement.lang = l;
+      document.querySelectorAll('.lang-btn').forEach(b => {
+        b.classList.toggle('on', b.textContent.toLowerCase() === l);
+      });
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.textContent = el.dataset[l];
+      });
+    }
+
+    setLang(lang);
+
+    // ── Navbar scroll ──
+    const nav = document.getElementById('nav');
+    const onScroll = () => nav.classList.toggle('solid', scrollY > 48);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  </script>
+
+</body>
+</html>
