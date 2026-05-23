@@ -53,7 +53,7 @@ export default function Services() {
         <div className="flex justify-center mt-16 lg:mt-24">
           <Image
             src="/map.jpeg"
-            alt="Monaco circuit map"
+            alt="Carte du circuit de Monaco – zones de dépose Taxi Boat"
             width={2048}
             height={1035}
             style={{ width: '100%', maxWidth: 760, height: 'auto', display: 'block', cursor: 'zoom-in' }}
@@ -75,7 +75,7 @@ export default function Services() {
           >
             <Image
               src="/map.jpeg"
-              alt="Monaco circuit map"
+              alt="Carte du circuit de Monaco – zones de dépose Taxi Boat"
               width={2048}
               height={1035}
               style={{ width: '100%', maxWidth: '90vw', maxHeight: '90vh', height: 'auto', display: 'block' }}

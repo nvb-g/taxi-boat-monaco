@@ -3,10 +3,10 @@ import Image from 'next/image'
 import { useLocale } from '@/lib/i18n'
 
 const PHOTOS = [
-  { src: '/gallery-1.webp', alt: 'Monaco boat',       label: 'Boat' },
-  { src: '/gallery-2.webp', alt: 'Monaco harbour',    label: 'Harbour' },
-  { src: '/gallery-3.webp', alt: 'Monaco coastline',  label: 'Monaco' },
-  { src: '/hero.webp',      alt: 'Monaco aerial',     label: 'Côte d\'Azur' },
+  { src: '/gallery-1.webp', alt: 'Yacht et bateaux dans le port de Monaco pendant le Grand Prix 2026', label: 'Boat' },
+  { src: '/gallery-2.webp', alt: 'Vue aérienne du port Hercule de Monaco', label: 'Harbour' },
+  { src: '/gallery-3.webp', alt: 'Côte de Monaco vue depuis la mer', label: 'Monaco' },
+  { src: '/hero.webp',      alt: 'Port de Monaco avec yachts, Côte d\'Azur', label: 'Côte d\'Azur' },
 ]
 
 export default function Gallery() {

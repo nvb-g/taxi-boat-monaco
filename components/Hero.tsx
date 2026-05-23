@@ -14,7 +14,7 @@ export default function Hero() {
       {/* Photo — nearly full bleed, let it breathe */}
       <Image
         src="/hero.webp"
-        alt="Monaco harbour"
+        alt="Vue aérienne du port de Monaco – Taxi Boat navette maritime Grand Prix 2026"
         fill
         className="object-cover object-center"
         priority
