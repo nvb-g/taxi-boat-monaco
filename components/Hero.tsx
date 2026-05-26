@@ -40,16 +40,35 @@ export default function Hero() {
         }}
       />
 
-      {/* ── Date chip — top right ── */}
+      {/* ── F1 Badge + date — top right ── */}
       <div
-        className="absolute top-24 right-8 lg:top-28 lg:right-14"
+        className="absolute top-24 right-8 lg:top-28 lg:right-14 flex flex-col items-end gap-2"
         style={{ zIndex: 10 }}
       >
+        {/* F1 badge */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+          <Image
+            src="/f1.png"
+            alt="Formula 1"
+            width={140}
+            height={35}
+            style={{ objectFit: 'contain', filter: 'drop-shadow(0 1px 6px rgba(0,0,0,0.4))' }}
+            priority
+          />
+          <span
+            className="t-label"
+            style={{ color: 'rgba(255,255,255,0.7)', fontSize: '0.55rem' }}
+          >
+            GRAND PRIX DE MONACO
+          </span>
+        </div>
+        {/* Date */}
         <span
           className="t-label"
           style={{
             color: '#fff',
-            background: 'var(--red)',
+            background: 'rgba(255,255,255,0.12)',
+            border: '1px solid rgba(255,255,255,0.25)',
             padding: '0.4rem 0.9rem',
             display: 'inline-block',
           }}
@@ -118,6 +137,7 @@ export default function Hero() {
           </div>
         </div>
       </div>
+
     </section>
   )
 }

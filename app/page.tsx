@@ -3,6 +3,7 @@ import Hero     from '@/components/Hero'
 import Manifesto from '@/components/Manifesto'
 import Services  from '@/components/Services'
 import Team      from '@/components/Team'
+import Poster    from '@/components/Poster'
 import Gallery   from '@/components/Gallery'
 import Contact   from '@/components/Contact'
 import Footer    from '@/components/Footer'
@@ -16,6 +17,7 @@ export default function Page() {
         <Manifesto />
         <Services />
         <Team />
+        <Poster />
         <Gallery />
         <Contact />
       </main>

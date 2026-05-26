@@ -2,10 +2,10 @@
 import { useLocale } from '@/lib/i18n'
 
 const TICKER_TEXT = [
-  'MONACO', '·', 'GRAND PRIX 2026', '·',
-  '04—07 JUIN', '·', 'NAVETTE MARITIME', '·',
-  'MONACO', '·', 'GRAND PRIX 2026', '·',
-  '04—07 JUIN', '·', 'NAVETTE MARITIME', '·',
+  'MONACO', '→', 'NICE', '→', 'VILLEFRANCHE', '→', 'VINTIMILLE', '·',
+  'GRAND PRIX 2026', '·', 'NAVETTE MARITIME', '·',
+  'MONACO', '→', 'NICE', '→', 'VILLEFRANCHE', '→', 'VINTIMILLE', '·',
+  'GRAND PRIX 2026', '·', 'NAVETTE MARITIME', '·',
 ]
 
 export default function Manifesto() {
@@ -33,6 +33,44 @@ export default function Manifesto() {
               {word}
             </span>
           ))}
+        </div>
+      </div>
+
+      {/* Ports strip */}
+      <div
+        className="px-6 lg:px-14 py-10"
+        style={{ background: 'var(--white)', borderBottom: '1px solid #e8e8e8' }}
+      >
+        <div className="max-w-5xl mx-auto">
+          <p className="t-label mb-5" style={{ color: 'var(--mid)' }}>
+            Ports desservis
+          </p>
+          <div className="flex flex-wrap items-baseline gap-x-4 gap-y-2">
+            {[
+              { name: 'Monaco', main: true },
+              { name: 'Nice', main: false },
+              { name: 'Villefranche-sur-Mer', main: false },
+              { name: 'Vintimille', main: false },
+              { name: '& alentours', main: false },
+            ].map((port, i, arr) => (
+              <span key={port.name} className="flex items-baseline gap-x-4">
+                <span
+                  className="font-display"
+                  style={{
+                    fontSize: 'clamp(1.2rem, 2.5vw, 1.9rem)',
+                    fontWeight: port.main ? 700 : 300,
+                    letterSpacing: '-0.01em',
+                    color: port.main ? 'var(--red)' : 'var(--black)',
+                  }}
+                >
+                  {port.name}
+                </span>
+                {i < arr.length - 1 && (
+                  <span style={{ color: '#ccc', fontSize: '1rem', fontWeight: 300 }}>·</span>
+                )}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
 

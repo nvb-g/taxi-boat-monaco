@@ -53,7 +53,7 @@ export default function Nav() {
 
         {/* CTA */}
         <a
-          href="tel:+33640610807"
+          href="#contact"
           className="btn btn-red hidden sm:inline-flex"
           style={{ padding: '0.55rem 1.1rem', fontSize: '0.58rem' }}
         >

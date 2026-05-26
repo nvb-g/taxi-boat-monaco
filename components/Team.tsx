@@ -2,9 +2,9 @@
 import { useLocale } from '@/lib/i18n'
 
 const GUIDES = [
-  { name: 'Marjorie',  phone: '06 40 61 08 07', tel: '+33640610807' },
-  { name: 'Amélie',    phone: '06 09 88 90 12', tel: '+33609889012' },
-  { name: 'Bénédicte', phone: '06 49 81 74 18', tel: '+33649817418' },
+  { name: 'Marjorie',  phone: '+33 6 40 61 08 07', tel: '+33640610807', showContact: true },
+  { name: 'Amélie',    phone: null,                 tel: null,           showContact: false },
+  { name: 'Bénédicte', phone: null,                 tel: null,           showContact: false },
 ]
 
 export default function Team() {
@@ -42,8 +42,7 @@ export default function Team() {
             style={{
               padding: '3.5rem 3rem 3.5rem',
               borderBottom: '1px solid rgba(255,255,255,0.18)',
-              borderRight:
-                i < 2 ? '1px solid rgba(255,255,255,0.18)' : undefined,
+              borderRight: i < 2 ? '1px solid rgba(255,255,255,0.18)' : undefined,
             }}
           >
             {/* Index + role */}
@@ -97,51 +96,53 @@ export default function Team() {
               }}
             />
 
-            {/* Phone */}
-            <p
-              className="font-sans"
-              style={{
-                fontSize: '1.05rem',
-                fontWeight: 600,
-                color: '#fff',
-                letterSpacing: '0.01em',
-                marginBottom: '2rem',
-              }}
-            >
-              {g.phone}
-            </p>
-
-            {/* Buttons */}
-            <div className="flex flex-col gap-3 mt-auto">
-              <a
-                href={`tel:${g.tel}`}
-                className="btn"
-                style={{
-                  background: '#0A0A0A',
-                  color: '#fff',
-                  border: '1px solid #0A0A0A',
-                  justifyContent: 'center',
-                  padding: '1rem 1.5rem',
-                }}
-              >
-                {t.team.cta1}
-              </a>
-              <a
-                href={`https://wa.me/${g.tel.replace('+', '')}`}
-                className="btn"
-                style={{
-                  background: 'transparent',
-                  color: '#fff',
-                  border: '2px solid rgba(255,255,255,0.65)',
-                  justifyContent: 'center',
-                  padding: '1rem 1.5rem',
-                }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                WhatsApp
-              </a>
-            </div>
+            {/* Phone + buttons — only for main contact */}
+            {g.showContact && (
+              <>
+                <p
+                  className="font-sans"
+                  style={{
+                    fontSize: '1.05rem',
+                    fontWeight: 600,
+                    color: '#fff',
+                    letterSpacing: '0.01em',
+                    marginBottom: '2rem',
+                  }}
+                >
+                  {g.phone}
+                </p>
+                <div className="flex flex-col gap-3 mt-auto">
+                  <a
+                    href={`tel:${g.tel}`}
+                    className="btn"
+                    style={{
+                      background: '#0A0A0A',
+                      color: '#fff',
+                      border: '1px solid #0A0A0A',
+                      justifyContent: 'center',
+                      padding: '1rem 1.5rem',
+                    }}
+                  >
+                    {t.team.cta1}
+                  </a>
+                  <a
+                    href={`https://wa.me/${g.tel!.replace('+', '')}`}
+                    className="btn"
+                    style={{
+                      background: 'transparent',
+                      color: '#fff',
+                      border: '2px solid rgba(255,255,255,0.65)',
+                      justifyContent: 'center',
+                      padding: '1rem 1.5rem',
+                    }}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    WhatsApp
+                  </a>
+                </div>
+              </>
+            )}
           </div>
         ))}
       </div>
