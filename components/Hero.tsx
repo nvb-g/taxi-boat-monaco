@@ -122,17 +122,31 @@ export default function Hero() {
             {t.hero.desc}
           </p>
 
-          <div className="flex gap-2 shrink-0">
-            <a href="tel:+33640610807" className="btn btn-red">
-              {t.hero.cta1}
-            </a>
+          <div className="flex flex-col gap-2 shrink-0">
+            <div className="flex gap-2">
+              <a href="tel:+33640610807" className="btn btn-red">
+                {t.hero.cta1}
+              </a>
+              <a
+                href="https://wa.me/33640610807"
+                className="btn btn-outline-w"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {t.hero.cta2}
+              </a>
+            </div>
             <a
-              href="https://wa.me/33640610807"
-              className="btn btn-outline-w"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:contact@taxiboatmonacof1.com"
+              style={{
+                fontSize: '0.78rem',
+                color: 'rgba(255,255,255,0.55)',
+                letterSpacing: '0.01em',
+                textDecoration: 'underline',
+                textUnderlineOffset: '3px',
+              }}
             >
-              {t.hero.cta2}
+              contact@taxiboatmonacof1.com
             </a>
           </div>
         </div>

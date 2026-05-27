@@ -140,6 +140,21 @@ export default function Team() {
                   >
                     WhatsApp
                   </a>
+                  <a
+                    href="mailto:contact@taxiboatmonacof1.com"
+                    style={{
+                      display: 'block',
+                      textAlign: 'center',
+                      marginTop: '0.5rem',
+                      fontSize: '0.78rem',
+                      color: 'rgba(255,255,255,0.55)',
+                      textDecoration: 'underline',
+                      textUnderlineOffset: '3px',
+                      letterSpacing: '0.01em',
+                    }}
+                  >
+                    contact@taxiboatmonacof1.com
+                  </a>
                 </div>
               </>
             )}
