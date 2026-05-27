@@ -29,6 +29,14 @@ export default function Footer() {
           {t.footer.event}
         </span>
 
+        <a
+          href="mailto:contact@taxiboatmonacof1.com"
+          className="t-label"
+          style={{ color: 'rgba(255,255,255,0.35)' }}
+        >
+          contact@taxiboatmonacof1.com
+        </a>
+
         <span className="t-label" style={{ color: 'rgba(255,255,255,0.18)' }}>
           {t.footer.copy}
         </span>

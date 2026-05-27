@@ -44,6 +44,20 @@ export default function Contact() {
                   {c.cta2}
                 </a>
               </div>
+              <a
+                href="mailto:contact@taxiboatmonacof1.com"
+                style={{
+                  display: 'inline-block',
+                  marginTop: '1.25rem',
+                  fontSize: '0.85rem',
+                  color: 'var(--mid)',
+                  letterSpacing: '0.01em',
+                  textDecoration: 'underline',
+                  textUnderlineOffset: '3px',
+                }}
+              >
+                contact@taxiboatmonacof1.com
+              </a>
             </div>
 
           </div>
